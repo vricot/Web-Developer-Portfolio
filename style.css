@@ -1,0 +1,70 @@
+/* Body */
+body, html {
+    height: 100%;
+}
+
+body {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+/* Left Side */
+
+.intro-left {
+    background: url(img/backgroundwall.jpeg) right;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    position: fixed;
+    left: 0;
+    width: 33.3333%;
+    height: 100%;
+    color: white;
+}
+
+.avatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 1rem;
+    border: solid rgb(255, 99, 190);
+    border-width: 5px;
+    box-shadow: -10px 5px 5px rgba(158, 63, 167, 0.35);
+}
+
+.full-height {
+    height: 100%;
+}
+
+/* Right Side */
+
+.quote {
+    color: rgb(255, 55, 228);
+}
+
+section {
+    margin: 5rem;
+    font-size: 1.2rem;
+}
+
+a {
+    color: rgb(255, 82, 241);
+    text-decoration: none;
+}
+
+.panel-right {
+    background-color: rgb(255, 242, 224);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .intro-left {
+        height: 30vh;
+        margin-bottom: 0;
+        position: relative;
+        width: 100%;
+    }
+}
+
+
