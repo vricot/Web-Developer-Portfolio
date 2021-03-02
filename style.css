@@ -30,6 +30,18 @@ body {
     border: solid rgb(255, 99, 190);
     border-width: 5px;
     box-shadow: -10px 5px 5px rgba(158, 63, 167, 0.35);
+    position: relative;
+    left: 10%;
+}
+
+#name {
+    position: relative;
+    left: 10%;
+}
+
+#title {
+    position: relative;
+    left: 10%;
 }
 
 .full-height {
@@ -54,6 +66,11 @@ a {
 
 .panel-right {
     background-color: rgb(255, 242, 224);
+}
+
+.icons a {
+    margin-right: 30px;
+    display: inline;
 }
 
 /* Media Queries */
