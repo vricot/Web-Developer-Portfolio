@@ -28,7 +28,7 @@
                     <section class="quote mt-3">
                         <figure class="text-end">
                             <blockquote class="blockquote">
-                              <p>"We all live in a network of stories.<br>There isn’t a stronger connection between people than storytelling.”
+                              <p>"We all live in a network of stories.”
                             </p>
                             </blockquote>
                             <figcaption class="blockquote-footer">
@@ -37,7 +37,7 @@
                           </figure>
                     </section>
                     <section class="intro">
-                        <p class="display-6">my goal is to make your story get told--functionally, beautifully.</p>
+                        <p class="display-6">my goal is to make sure your story gets told--functionally, beautifully.</p>
                     </section>
                     <section class="skills">
                         <div class="container">
@@ -89,7 +89,7 @@
                         <h2 class="display-6">my projects:</h2>
                             <div class="containter-fluid">
                                 <div class="row">
-                                    <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/WorkNomad.png" alt=""></a></col-md-6></div>
+                                    <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/WorkNomad.png" alt="" id="work-nomad-btn"></a></col-md-6></div>
                                     <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/Personal-Portfolio.png" alt=""></a></col-md-6></div>
                                     <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/Score-Keeper.png" alt=""></a></col-md-6></div>
                                     <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/Cyber-Museum.png" alt=""></a></col-md-6></div>
@@ -154,7 +154,7 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Name:</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                        <input type="text" class="form-control" id="name-input" placeholder="Name">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -180,5 +180,33 @@
                 </div>
             </div>
         </div>
+        <!--Modals Section-->
+            <div class="bg-modal">
+                <div class="modal-content">
+                    <div class="close">+</div>
+                    <div class="modal-content-video">
+                        <video src="/video/WorkNomad-Walkthrough.mp4" controls autoplay="autoplay"></video>
+                    </div>
+                    <div class="modal-content-description">
+                        <a href="https://worknomad.herokuapp.com/" target="_blank"><p>View Live Site</p></a>
+                        <a href="https://github.com/vricot/WorkNomad" target="_blank"><p>View Source Code</p></a>
+                        <p class="modal-description-paragraph">App to find and review work-friendly spots in your area. Built <b>RESTfully</b> with full <b>CRUD</b> and <b>MVC</b> using <b>MongoDB,</b> <b>Express</b>, & <b>Node.js</b>. Deployed on <b>Heroku</b>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-modal">
+                <div class="modal-content">
+                    <div class="close">+</div>
+                    <div class="modal-content-video">
+                        <video src="/video/Final_Personal_Web_Vid.mp4" controls autoplay="autoplay"></video>
+                    </div>
+                    <div class="modal-content-description">
+                        <!--<a href="#" target="_blank"><p>View Live Site</p></a>-->
+                        <a href="https://github.com/vricot/PersonalPortfolio-WP" target="_blank"><p>View Source Code</p></a>
+                        <p class="modal-description-paragraph">Personal Portfolio featuring all of my interests, hobbies, and freelance work. Responsive Web Design Project for freeCodeCamp using <b>HTML</b>, <b>CSS</b>, some <b>JavaScript</b>, and some <b>Bootstrap</b>. Built with <b>PHP</b>, <b>Local</b>, <b>XAMPP</b>, and <b>WordPress CMS</b>. Still in development.</p>
+                    </div>
+                </div>
+            </div>
+        <script src="/app.js"></script>
     </body>
 </html>

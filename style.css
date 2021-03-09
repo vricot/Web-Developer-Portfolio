@@ -1,87 +1,137 @@
 /* Body */
-body, html {
-    height: 100%;
+body,
+html {
+  height: 100%;
 }
 
 body {
-    font-weight: 200;
-    font-size: 1.5rem;
-    color: #444;
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: #444;
 }
 
 /* Left Side */
 
 .intro-left {
-    background: url(img/backgroundwall.jpeg) right;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    position: fixed;
-    left: 0;
-    width: 33.3333%;
-    height: 100%;
-    color: white;
+  background: url(img/backgroundwall.jpeg) right;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  position: fixed;
+  left: 0;
+  width: 33.3333%;
+  height: 100%;
+  color: white;
 }
 
 .avatar {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    margin: 1rem;
-    border: solid rgb(255, 99, 190);
-    border-width: 5px;
-    box-shadow: -10px 5px 5px rgba(158, 63, 167, 0.35);
-    position: relative;
-    left: 10%;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 1rem;
+  border: solid rgb(255, 99, 190);
+  border-width: 5px;
+  box-shadow: -10px 5px 5px rgba(158, 63, 167, 0.35);
+  position: relative;
+  left: 10%;
 }
 
 #name {
-    position: relative;
-    left: 10%;
+  position: relative;
+  left: 10%;
 }
 
 #title {
-    position: relative;
-    left: 10%;
+  position: relative;
+  left: 10%;
 }
 
 .full-height {
-    height: 100%;
+  height: 100%;
 }
 
 /* Right Side */
 
 .quote {
-    color: rgb(255, 55, 228);
+  color: rgb(255, 55, 228);
 }
 
 section {
-    margin: 5rem;
-    font-size: 1.2rem;
+  margin: 5rem;
+  font-size: 1.2rem;
 }
 
 a {
-    color: rgb(255, 82, 241);
-    text-decoration: none;
+  color: rgb(255, 82, 241);
+  text-decoration: none;
 }
 
 .panel-right {
-    background-color: rgb(255, 242, 224);
+  background-color: rgb(253, 248, 241);
 }
 
 .icons a {
-    margin-right: 30px;
-    display: inline;
+  margin-right: 30px;
+  display: inline;
+}
+
+/* Modal Background */
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  padding: 50px;
+  position: relative;
+}
+
+.modal-content-video {
+  width: 100%;
+}
+
+video {
+  width: inherit;
+}
+
+.modal-content-description {
+    margin-top: .5rem;
+}
+
+.modal-content-description a {
+  font-size: 20px;
+  line-height: 1rem;
+}
+
+.modal-description-paragraph {
+  font-size: 16px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
 }
 
 /* Media Queries */
 
 @media (max-width: 768px) {
-    .intro-left {
-        height: 30vh;
-        margin-bottom: 0;
-        position: relative;
-        width: 100%;
-    }
+  .intro-left {
+    height: 30vh;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+  }
 }
-
-
