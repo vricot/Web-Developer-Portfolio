@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Valerie's Web Portfolio</title>
-        <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Bootstrap5beta/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         <script src="https://use.fontawesome.com/912ebd9506.js"></script>
     </head>
@@ -46,7 +46,7 @@
                                     <h1 class="display-6">hard skills:</h1>
                                     <ul>
                                         <li>
-                                            HTML, CSS, JavaScript
+                                            HTML5, CSS3, JavaScript
                                         </li>
                                         <li>
                                             MongoDB, Express, Node.js, PHP
@@ -83,27 +83,53 @@
                             </div>
                         </div>
                        
-                     
+   <!--Project Modal Buttons Section-->                  
                     </section>
                     <section class="projects">
                         <h2 class="display-6">my projects:</h2>
                             <div class="containter-fluid">
                                 <div class="row">
-                                    <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/WorkNomad.png" alt="" id="work-nomad-btn"></a></col-md-6></div>
-                                    <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/Personal-Portfolio.png" alt=""></a></col-md-6></div>
-                                    <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/Score-Keeper.png" alt=""></a></col-md-6></div>
-                                    <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/Cyber-Museum.png" alt=""></a></col-md-6></div>
-                                    <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/Product-Landing-Page.png" alt=""></a></col-md-6></div>
-                                    <div class="col-lg-6 mb-3"><a href="#" class="project-link"><img class="img-fluid thumbnail" src="img/Survey-Form.png" alt=""></a></col-md-6></div>
+                                    <div class="col-lg-6 mb-3">
+                                        <button type="button" class="btn btn-lg project-link modal-open" data-bs-toggle="modal" data-bs-target="#work-nomad">
+                                            <img class="img-fluid thumbnail" src="img/WorkNomad.png" alt="" id="work-nomad-btn" data-modal="work-nomad">
+                                        </button></col-md-6>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <button type="button" class="btn btn-lg project-link modal-open" data-bs-toggle="modal" data-bs-target="#personal-portfolio">
+                                            <img class="img-fluid thumbnail" src="img/Personal-Portfolio.png" alt="" data-modal="personal-portfolio">
+                                        </button></col-md-6>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <button type="button" class="btn btn-lg project-link modal-open" data-bs-toggle="modal" data-bs-target="#score-keeper">
+                                            <img class="img-fluid thumbnail" src="img/Score-Keeper.png" alt="" data-modal="score-keeper">
+                                        </button></col-md-6>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <button type="button" class="btn btn-lg project-link modal-open" data-bs-toggle="modal" data-bs-target="#cyber-museum">
+                                            <img class="img-fluid thumbnail" src="img/Cyber-Museum.png" alt="" data-modal="cyber-museum">
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <button type="button" class="btn btn-lg project-link modal-open" data-bs-toggle="modal" data-bs-target="#product-landing-page">
+                                            <img class="img-fluid thumbnail" src="img/Product-Landing-Page.png" alt="" data-modal="product-landing-page">
+                                        </button>
+                                        </col-md-6>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <button type="button" class="btn btn-lg project-link modal-open" data-bs-toggle="modal" data-bs-target="#survey-form">
+                                            <img class="img-fluid thumbnail" src="img/Survey-Form.png" alt="" data-modal="survey-form">
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        <a href="#" class="float-end mt-3 px-3">see more ></a>
+                        <a href="#" class="float-end mt-3 px-3">more coming soon!</a>
+                    </section>
+    <!--Resume Section-->
+                    <section class="resume">
+                        <a href="#" target="_blank"><h2 class="display-6">check out my resume</h2></a>
                     </section>
 
-                    <section class="resume">
-                        <a href=""><h2 class="display-6">check out my resume</h2></a>
-                    </section>
-                          
+    <!--Blog Section--> 
                     <section class="blog">
                         <h2 class="display-6 mb-5">my blog:</h2>
                             <div class="container-fluid">
@@ -142,6 +168,8 @@
                     </div>
                     <a href="#" class="float-end px-3">read more ></a>
                     </section>
+
+    <!--Contact Section-->
                     <section class="contact">
                         <h2 class="display-6 mb-3">contact me:</h2>
                         <div class="container-fluid mb-3 icons">
@@ -180,59 +208,122 @@
                 </div>
             </div>
         </div>
-        <!--Modals Section-->
-            <div class="bg-modal">
+        
+    <!--Modals Section-->
+        <div id="work-nomad" class="modal fade" tabindex="-1" aria-labelledby="work-nomad" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close">+</div>
-                    <div class="modal-content-video">
-                        <video src="/video/WorkNomad-Walkthrough.mp4" controls autoplay="autoplay"></video>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="work-nomad">WorkNomad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-content-description">
-                        <a href="https://worknomad.herokuapp.com/" target="_blank"><p>View Live Site</p></a>
-                        <a href="https://github.com/vricot/WorkNomad" target="_blank"><p>View Source Code</p></a>
-                        <p class="modal-description-paragraph">App to find and review work-friendly spots in your area. Built <b>RESTfully</b> with full <b>CRUD</b> and <b>MVC</b> using <b>MongoDB,</b> <b>Express</b>, & <b>Node.js</b>. Deployed on <b>Heroku</b>.</p>
+                    <div class="modal-body">
+                        <video class="modal-video" src="/video/WorkNomad-Walkthrough.mp4" controls autoplay="autoplay"></video>
+                        <a href="https://worknomad.herokuapp.com/" target="_blank">View Live Site</a><br>
+                        <a href="https://github.com/vricot/WorkNomad" target="_blank">View Source Code</a>
+                        <p>App to find and review work-friendly spots in your area. Built <b>RESTfully</b> with full <b>CRUD</b> and <b>MVC</b> using <b>MongoDB,</b> <b>Express</b>, & <b>Node.js</b>. Deployed on <b>Heroku</b>.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-            <div class="bg-modal">
+        </div>
+
+        <div id="personal-portfolio" class="modal fade" tabindex="-1" aria-labelledby="personal-portfolio" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close">+</div>
-                    <div class="modal-content-video">
-                        <video src="/video/Final_Personal_Web_Vid.mp4" controls autoplay="autoplay"></video>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="personal-portfolio">Personal Portfolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-content-description">
-                        <!--<a href="#" target="_blank"><p>View Live Site</p></a>-->
-                       <a href="https://github.com/vricot/PersonalPortfolio-WP" target="_blank"><p>View Source Code</p></a>
-                        <p class="modal-description-paragraph">Personal Portfolio featuring all of my interests, hobbies, and freelance work. Responsive Web Design Project for freeCodeCamp using <b>HTML</b>, <b>CSS</b>, some <b>JavaScript</b>, and some <b>Bootstrap</b>. Built with <b>PHP</b>, <b>Local</b>, <b>XAMPP</b>, and <b>WordPress CMS</b>. Still in development.</p>
+                    <div class="modal-body">
+                        <video class="modal-video" src="/video/Final_Personal_Web_Vid.mp4" controls autoplay="autoplay"></video>
+                        <a href="https://github.com/vricot/PersonalPortfolio-WP" target="_blank">View Source Code</a>
+                        <p>Personal Portfolio featuring all of my interests, hobbies, and freelance work. Responsive Web Design Project for freeCodeCamp using <b>HTML5</b>, <b>CSS3</b>, some <b>JavaScript</b>, <b>Font Awesome</b>, <b>Google Fonts</b>, and some <b>Bootstrap 4</b>. Built with <b>PHP</b>, <b>Local</b>, <b>XAMPP</b>, and <b>WordPress CMS</b>. Still in development.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-            <div class="bg-modal">
+        </div>
+
+        <div id="score-keeper" class="modal fade" tabindex="-1" aria-labelledby="score-keeper" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close">+</div>
-                    <div class="modal-content-video">
-                        <video src="/video/Score-Keeper-Walkthrough.mp4" controls autoplay="autoplay"></video>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="score-keeper">Score Keeper</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-content-description">
-                        <!--<a href="#" target="_blank"><p>View Live Site</p></a>-->
-                       <a href="https://github.com/vricot/Score-Keeper" target="_blank"><p>View Source Code</p></a>
-                        <p class="modal-description-paragraph">Ping Pong Score-Keeper built using <b>HTML5</b>, <b>Bootstrap</b>, and <b>JavaScript</b>. Colt Steele Udemy Web Developer Bootcamp Project.</p>
+                    <div class="modal-body">
+                        <video class="modal-video" src="/video/Score-Keeper-Walkthrough.mp4" controls autoplay="autoplay"></video>
+                        <a href="https://github.com/vricot/Score-Keeper" target="_blank">View Source Code</a>
+                        <p>Ping Pong Score-Keeper built using <b>HTML5</b>, <b>Bulma</b>, and <b>JavaScript</b>. Colt Steele Udemy Web Developer Bootcamp Project.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-            <div class="bg-modal">
+        </div>
+
+        <div id="cyber-museum" class="modal fade" tabindex="-1" aria-labelledby="cyber-museum" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close">+</div>
-                    <div class="modal-content-video">
-                        <video src="#" controls autoplay="autoplay"></video>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cyber-museum">Cyber Museum</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-content-description">
-                        <!--<a href="#" target="_blank"><p>View Live Site</p></a>-->
-                       <a href="#" target="_blank"><p>View Source Code</p></a>
-                        <p class="modal-description-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque voluptates ea natus illum obcaecati similique quae alias dolore! Nulla dolorem veritatis culpa possimus at quam debitis aspernatur. Unde, corrupti?</p>
+                    <div class="modal-body">
+                        <video class="modal-video" src="/video/Cyber-Museum-Walkthrough.mov" controls autoplay="autoplay"></video>
+                        <a href="https://github.com/vricot/Cyber-Museum" target="_blank">View Source Code</a>
+                        <p>Home landing page for Cyber Museum. Built using <b>HTML5</b> and <b>Bootstrap 4 Grid</b>. Colt Steele Udemy Web Developer Bootcamp Project.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-        <script src="/app.js"></script>
+        </div>
+
+        <div id="product-landing-page" class="modal fade" tabindex="-1" aria-labelledby="product-landing-page" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="product-landing-page">Product Landing Page</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video class="modal-video" src="/video/Product-Landing-Page-Walkthrough.mp4" controls autoplay="autoplay"></video>
+                        <a href="https://github.com/vricot/Product_Landing_Page" target="_blank">View Source Code</a>
+                        <p>Product Landing Page for Kawaii Melon fashion brand. Built using <b>HTML5</b>, <b>CSS3</b>, and <b>Google Fonts</b>. freeCodeCamp Responsive Web Design project.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="survey-form" class="modal fade" tabindex="-1" aria-labelledby="survey-form" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="survey-form">Background Survey Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video class="modal-video" src="/video/Survey-Form-Walkthrough.mp4" controls autoplay="autoplay"></video>
+                        <a href="https://github.com/vricot/Survey_Form" target="_blank">View Source Code</a>
+                        <p>Background Survey Form. Built using <b>HTML5</b> and <b>CSS3</b>. freeCodeCamp Responsive Web Design Project.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="Bootstrap5beta/js/bootstrap.min.js"></script>
     </body>
 </html>
